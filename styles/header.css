@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 60px;    
+}
+
+.projects,
+.conferences,
+.work,
+.contacts {
+    color: rgb(52,78,65) ;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 20px;
+}
