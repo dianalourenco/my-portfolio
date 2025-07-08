@@ -2,4 +2,26 @@
     margin-top: 50px;
     font-size: 30px;
     color: rgb(58,90,64) ;
+    margin-left: 12px;
+    display: flex;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.square-name {
+    background-color: rgb(58,90,64);
+    height: 23px;
+    width: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+@keyframes blink {
+    50% {opacity: 0;}
+}
+
+.square-name {
+    animation: blink 0.9s step-end infinite;
 }
