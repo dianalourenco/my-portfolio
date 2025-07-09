@@ -78,13 +78,6 @@
     font-weight: bold;
 }
 
-.continue-code {
-    display: inline;
-    background-color: #feffff;
-    height: 23px;
-    width: 10px;
-}
-
 .plain-text-link {
     text-decoration: none;
     color: inherit;
