@@ -64,7 +64,8 @@
 .name-languages,
 .continue-code {
     color: #feffff;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
+    font-family: Cascadia Code, Arial;
 }
 
 .desktop {
