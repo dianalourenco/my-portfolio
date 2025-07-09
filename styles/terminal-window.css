@@ -1,5 +1,9 @@
 .terminal-container {
-    margin-top: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
 }
 
 .header-terminal {
@@ -7,9 +11,11 @@
     position: absolute;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    top: 0;
+    left: 0;
+    height: 28px;
+    width: 100%;
     background-color: rgba(57,54,51,255);
-    height: 30px ;
-    width: 900px;
 }
 
 .first-circle {
@@ -40,12 +46,15 @@
 }
 
 .terminal-part {
+    position: relative;
     background-color: rgba(43,11,31,255);
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
     padding-top: 35px;
     padding-bottom: 10px;
     border-radius: 5px;
     padding-left: 5px;
+    box-sizing: border-box;
 }
 
 .name-location,
@@ -55,7 +64,7 @@
 .name-languages,
 .continue-code {
     color: #feffff;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 .desktop {
@@ -73,4 +82,14 @@
     background-color: #feffff;
     height: 23px;
     width: 10px;
+}
+
+.plain-text-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.15s;
+}
+
+.plain-text-link:hover {
+    color: lightslategray;
 }
