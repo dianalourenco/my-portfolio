@@ -4,6 +4,7 @@
     justify-content: center;
     position: relative;
     width: 100%;
+    height: 100%;
 }
 
 .header-terminal {
@@ -64,7 +65,7 @@
 .name-languages,
 .continue-code {
     color: #feffff;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     font-family: Cascadia Code, Arial;
 }
 
@@ -86,4 +87,16 @@
 
 .plain-text-link:hover {
     color: lightslategray;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    
+}
+
+.blinking-cursor {
+    display: inline-block;
+    animation: blink 1s step-end infinite;
 }
