@@ -1,4 +1,8 @@
 .conferences-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
     font-size: 25px;
     font-weight: bold;
     text-decoration: underline dotted rgba(238, 174, 202, 1);
@@ -6,18 +10,91 @@
     text-decoration-thickness: 5px;
 }
 
-.conferences-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-}
 
 .timeline {
-    margin: 0 auto;
-    max-width: 750x;
-    padding: 25px;
-    display: grid;
-    color: black;
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.timeline-container {
+    position: relative;
+    padding: 10px 30px;
+    width: 50%;
+    overflow: visible;
+}
+
+
+.text-timeline {
+    padding: 20px 30px;
+    position: relative;
+    background: rgb(215, 225, 236);
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50% ;
+}
+
+.timeline-container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right img{
+    left: -20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.text-timeline h2 {
+    font-weight: 600;
+}
+
+.text-timeline small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(215, 225, 236);
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(215, 225, 236);
+    left: -15px;
 }
